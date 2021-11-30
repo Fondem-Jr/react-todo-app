@@ -6,20 +6,20 @@ const About = (props) => {
     console.log(useRouteMatch());
     const { url, path } = useRouteMatch()
 
-  return (
+return (
     <div>
     <ul>
-      <li>
+    <li>
         <Link to={`${url}/about-app`}>About App</Link>
-      </li>
-      <li>
+    </li>
+    <li>
         <Link to={`${url}/about-author`}>About Author</Link>
-      </li>
+    </li>
     </ul>
     <Route path={`${path}/:slug`}>
-      <SinglePage />
+    <SinglePage />
     </Route>
-  </div>
-  )
+</div>
+)
 }
 export default About
